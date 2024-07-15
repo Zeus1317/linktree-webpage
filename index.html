@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratham Sharma</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&family=Saira:wght@800&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h2 {
+    font-family: 'Saira', sans-serif;
+    font-weight: 800;
+    font-size: 3.5em; /* Larger font size for emphasis */
+    text-transform: uppercase;
+    color: #f39c12; /* Bright yellow color */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    position: relative;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease forwards, slideIn 1s ease 0.5s forwards;
+    margin-bottom: 20px;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+        body > img {
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 100%;
+            z-index: -1; /* Ensure the background image is behind content */
+        }
+
+        section {
+            display: grid;
+            place-items: center;
+            position: absolute;
+            inset: 0;
+            overflow-y: scroll;
+            padding: 20px; /* Increased padding for better spacing */
+            background: rgba(0, 0, 0, 0.3); /* Semi-transparent overlay */
+        }
+
+        section div {
+            display: flex;
+            flex-direction: column;
+            gap: 20px; /* Increased gap between elements */
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px; /* Increased padding for better spacing */
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px; /* Added border radius for rounded corners */
+        }
+
+        section div img {
+            width: 150px; /* Increased image size */
+            height: 150px; /* Set height for consistency */
+            object-fit: cover;
+            border-radius: 50%;
+            box-shadow: 0 0 8px 1px lightblue;
+        }
+
+        a {
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            border: 1.5px solid white;
+            padding: 15px; /* Increased padding for larger clickable area */
+            color: white;
+            text-decoration: none;
+            gap: 20px;
+            border-radius: 4px;
+            transition-duration: 200ms;
+        }
+
+        a:hover {
+            background: white;
+            color: #0f172a;
+        }
+
+        a i {
+            font-size: 1.3em;
+        }
+    </style>
+</head>
+
+<body>
+    <img src="image2.jpg"
+        alt="bg" />
+    <section>
+        <div>
+            <img src="pratham.jpg" alt="dp" />
+            <h2>Pratham Sharma</h2>
+            <div>
+                <a href="https://www.linkedin.com/in/pratham-sharma-2a1031249">
+                    <i class="fab fa-linkedin"></i>
+                    <p>LinkedIn</p>
+                </a>
+                <a href="https://github.com/Zeus1317">
+                    <i class="fab fa-github"></i>
+                    <p>Github</p>
+                </a>
+                <a href="https://www.instagram.com/pratham__1713?igsh=bGI4Z3Z2OGplcjhs">
+                    <i class="fab fa-instagram"></i>
+                    <p>Instagram</p>
+                </a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
